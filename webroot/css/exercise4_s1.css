@@ -47,7 +47,7 @@ hr{
 
 
 p{
-    font-family: serif;
+    font-family: sans-serif;
     font-size: 1.1em
 }
 a:link{
@@ -75,7 +75,7 @@ footer{
 footer p{
     font-family: sans-serif;
 }
+
 div hr{
     margin-bottom: 2%;
 }
-
