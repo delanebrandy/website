@@ -6,10 +6,21 @@
     width: 80%;
 }
 
+div hr{
+    margin-bottom: 2%;
+}
+
 /*Background settings*/
 html { 
     background: #F0F0F0;
     font-size: 100%;
+}
+
+div{
+    background-color: hsl(188, 71%, 90%);
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 1%;
 }
 
 /*Header*/
@@ -19,6 +30,7 @@ html {
     padding: 1%;
 }
 
+/*Navigation Bar*/
 #navBar{
     font-family: sans-serif;
     font-size: 1.125em;
@@ -26,6 +38,7 @@ html {
     padding: 1%;
 }
 
+/*Headers*/
 h1, h2, h3, h4, h5, h6 {
     font-family: sans-serif;
     font-weight: bold;
@@ -50,6 +63,8 @@ p{
     font-family: sans-serif;
     font-size: 1.1em
 }
+
+/*Links*/
 a:link{
     color: #D518F0;
     font-weight: bold;
@@ -59,13 +74,7 @@ a:visited{
     color: #008ABD;
 }
 
-div{
-    background-color: hsl(188, 71%, 90%);
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding: 1%;
-}
-
+/*Footers*/
 footer{
     background-color: #00B0F0;
     color: #FFFFFF;
@@ -76,10 +85,15 @@ footer p{
     font-family: sans-serif;
 }
 
-div hr{
-    margin-bottom: 2%;
-}
-
+/*Images*/
 img{
     border: 0.01em solid #000000;
+}
+
+/*p classes*/
+.p1{
+    font-family: serif;
+}
+.p2{
+    font-family: sans-serif;
 }
