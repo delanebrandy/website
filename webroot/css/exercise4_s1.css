@@ -79,3 +79,7 @@ footer p{
 div hr{
     margin-bottom: 2%;
 }
+
+img{
+    border: 0.01em solid #000000;
+}
