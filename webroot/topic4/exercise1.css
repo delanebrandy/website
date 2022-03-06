@@ -1,0 +1,35 @@
+@import url(reset.css);
+
+html{
+    font-family: sans-serif;
+}
+
+.mainBody td{
+    background: white;
+}
+
+table{
+    border: 2px solid rgb(55, 126, 127);
+}
+
+td{
+    background:lightgray;
+    border: 1px solid black;
+    font-size: 1em;
+}
+
+th{
+    background:rgb(55, 126, 127);
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.heading{
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.15em;
+    vertical-align: middle;
+}   

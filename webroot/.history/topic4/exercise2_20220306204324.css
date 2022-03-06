@@ -1,0 +1,44 @@
+@import url(reset.css);
+
+html{
+    font-family: sans-serif;
+}
+
+table {
+    border: 1.5px solid black;
+}
+
+caption {
+    background:rgb(127, 23, 14);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    
+}
+
+img{
+    width: 90px;
+    height: 130px;
+    border-radius: 15px;
+}
+
+td{
+    vertical-align: middle;
+    border: 1px solid grey;
+    text-align: center;
+}
+.topBar td{
+    background: lightgray;
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: center;
+}
+
+td table{
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+
