@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercise4.css">
+    <title>exercise4</title>
+</head>
+<body>
+    <form method= "GET" action="http://webprojects.eecs.qmul.ac.uk/un300/week4/week4_process.php">
+        <fieldset>
+            <legend>Shirt Order Form</legend>
+            <div class = "box">
+                <p>
+                    <label for="size">Shirt Size</label><br/>
+                    <select name="size_size">
+                        <option value="" disabled selected hidden>Choose size</option>
+                        <option>XS</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                </p>
+                    
+                <p>
+                    <label>Sleeves</label><br/>
+                    <input type="radio" name = "sleeves" value = "short" checked><label for="sleeves" >Short</label><br/>
+                    
+                    <input type="radio" name = "sleeves" value = "long"><label for="sleeves">Long</label>
+                </p>
+                    
+                <p>
+                       <label for="color">Choose Shirt Colour</label><br/>
+                        <input type="color" name = "color">
+                </p>
+
+                <p>
+                    <label for="quantity">Quantity</label><br/>
+                    <input type="number" min="1" max="10" name="quantity">
+                </p>
+                <p>
+                    <label for="date">Date Requested</label><br/>
+                    <input type="date" name="date">
+                </p>
+            </div>
+
+            <div class="box">
+                <p>
+                    <label for="name">Name</label><br/>
+                    <input type="text" name = "name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address</label><br/>
+                    <input type="email" name="email">
+                </p>
+
+                <p>
+                    <label for="telephone">Telephone Number</label><br/>
+                    <input type="tel" name="telephone" pattern="[1-9]{2}-[1-9]{3}-[1-9]{3}-[1-9]{4}">
+                    Example: 44-207-882-1234
+                </p>
+            </div>
+
+            <div class = "box">
+                <p>
+                    <label for="adress">Address</label><br/>
+                    <input type="adress" name="address">
+                </p>
+
+                <p>
+                    <label for="city">City</label><br/>
+                    <input type= "text" name= "city" list = "cities"> 
+                    <datalist id="cities">
+                        <option value="London">
+                        <option value="Manchester">
+                        <option value="Sheffield">
+                        <option value="Birmingham">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="postcode">Postcode</label><br/>
+                    <input type="text" name="postcode">
+                </p>
+            </div>
+
+            <div class = "endBox">
+
+                <p>
+                    <label for="accept">Please keep me informed about future shirt designs</label>
+                    <input type="checkbox" name=accept>
+                </p>
+
+                <div class = "buttonsGroup">
+                    <p>
+                        <input type="submit" class="endButton">
+                        <input type="reset" value="Clear Form" class="endButton">
+                    </p>
+                </div>
+                
+            </div>
+            
+        </fieldset>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,52 @@
+@import url(reset.css);
+
+
+html {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.box{
+    border: 2px solid #00b3e5;
+    margin: 10px;
+    padding: 10px;
+}
+
+.endBox{
+    background: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.endButton{
+    background: #00b3e5;
+    color: white;
+    border-width: 1px;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.buttonsGroup{
+    text-align: center;
+    padding: 30px;
+}
+
+legend{
+    background: #00b3e5;
+    color: white;
+    text-align: center;
+    width:99%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+}
+
+fieldset{
+    border: 2px solid grey;
+    margin: 10px;
+    padding: 10px;
+    background: hsl(193, 100%, 90%)
+    
+}

@@ -1,4 +1,4 @@
-html, body, span, h1, h2, h3, h4, h5, h6, p, a, figure, caption, figcaption, img, section, br, table, tr, th, td{
+html, body, span, h1, h2, h3, h4, h5, h6, p, a, figure, caption, figcaption, img, section, br, table, tr, th, td, legend, fieldset{
     margin: 0;
     padding: 0;
     border: 0;
