@@ -12,13 +12,13 @@ table{
     border: 2px solid rgb(55, 126, 127);
 }
 
-td{
+td, th{
     background:lightgray;
     border: 1px solid black;
     font-size: 1em;
 }
 
-th{
+caption{
     background:rgb(55, 126, 127);
     font-weight: bold;
     font-size: 1.5em;
@@ -33,3 +33,10 @@ th{
     font-size: 1.15em;
     vertical-align: middle;
 }   
+
+th{
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
