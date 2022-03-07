@@ -20,16 +20,16 @@ caption {
 
 img{
     width: 90px;
-    height: 130px;
+    height: 125px;
     border-radius: 15px;
 }
 
-td{
+td, th{
     vertical-align: middle;
     border: 1px solid grey;
     text-align: center;
 }
-.topBar td{
+thead{
     background: lightgray;
     font-weight: bold;
     vertical-align: middle;

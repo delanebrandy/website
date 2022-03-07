@@ -4,16 +4,13 @@ html{
     font-family: sans-serif;
 }
 
-.mainBody td{
-    background: white;
-}
+
 
 table{
     border: 2px solid rgb(55, 126, 127);
 }
 
 td, th{
-    background:lightgray;
     border: 1px solid black;
     font-size: 1em;
 }
@@ -34,7 +31,12 @@ caption{
     vertical-align: middle;
 }   
 
-th{
+
+tfoot{
+    background:lightgray;
+}
+thead{
+    background:lightgray;
     font-weight: bold;
     text-align: center;
     font-size: 1.2em;
