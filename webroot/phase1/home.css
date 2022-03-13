@@ -3,16 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Roboto:ital@0;1&display=swap');
 
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 html{
     font-family: Roboto, sans-serif;   
 }
 
-.banner{
+header{
 
     background: rgb(5,245,255);
     background: linear-gradient(90deg, rgba(5,245,255,1) 0%, rgba(13,128,217,1) 100%);
@@ -23,38 +18,37 @@ html{
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
 
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 5rem;
 }
 
 nav{
-    order: 1;
+
 }
 
-.banner img{
+header img{
     height: 50px;
     cursor: pointer;
-    order: 3;
     margin-left: auto;
 }
 
-.banner a{
+header a{
     font-size: 30px;
     vertical-align: middle;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 0.5rem;
     text-decoration: none;
     color: white;
-
 }
-.banner a:hover{
+
+header a:hover{
     color: navy;
     /*color: #F01FD7*/
     
 }
-.banner ul{
+header ul{
     list-style: none;
     display: flex;
 }
@@ -76,4 +70,22 @@ nav{
     font-style: normal;
     font-size: 4rem;
     line-height: 70%;
+}
+
+.p2{
+    position: relative;
+    left:3rem;
+}
+
+.fancyFont{
+    font-family: minion-3, serif;
+    font-weight: 500;
+    font-style: italic;
+}
+.pink{
+    color: #d916f2
+}
+
+.main2{
+    display: inline-block;
 }
