@@ -1,0 +1,113 @@
+@import url("reset.css");
+
+html{
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: lightgreen;
+  height: 60px;
+}
+nav li {
+  
+  float: left;
+  display: block;
+  padding-top: 20pt;
+  padding-left: 10pt;   
+}
+nav li a {
+  text-decoration: none;
+}
+
+#name a {
+  font-size: 20pt;
+  font-weight: bold;    
+  line-height: 40%;
+  color: black;
+}
+.selection {
+  padding-left: 15pt;
+  
+}
+#divleftcolumn {
+  float: left;
+  margin-top: 10pt;
+  background-color: white;    
+}
+#divmaincolumn {    
+  margin-top: 10pt;
+  padding: 15pt;
+  margin-left: 20em;
+  margin-right: 20em;
+  position: absolute;
+
+}
+.divleftbar {  
+  background-color: lightgray;
+  padding: 15pt;    
+  margin-top: 10pt;
+  margin-bottom: 10pt;
+  width: 15em;      
+}
+.divleftbar li {
+  display: block;    
+}
+.imgRank {    
+  display: inline-block;  
+}
+.skillRank {
+  float: left;        
+  padding-top: 10pt;
+}
+#skills {
+  height: 18em;
+  padding: 10pt;
+  background-color: white;
+}
+#researchhd {
+  color: grey;
+  background-color: lightgray;;
+}
+
+.h2div {
+  background-color: lightgreen;    
+  padding: 10pt;
+}
+ul li a {
+  text-decoration: none;
+}
+ul li {
+  display: block;
+}
+
+#mainimage {    
+  float: right;
+  width: 200px;
+  height: 200px;
+}
+#education {   
+  border-top: 1pt solid lightgreen;
+  clear: right;
+}
+.divrightcolumn {
+  margin-top: 5pt;
+  margin-left: 55em;
+  width: 20em;
+  height: 100em;
+  float: right;     
+  position: absolute;
+  padding: 15pt; 
+  margin-bottom: 10pt;
+  background-color: white;
+}
+.rightbar {        
+  background-color: lightgray;
+  padding: 15pt;        
+  margin-bottom: 10pt;
+}
+aside {
+  background-color: white;
+}
+.listright {
+  padding: 10pt;
+}

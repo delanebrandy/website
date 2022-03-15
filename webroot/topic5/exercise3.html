@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercise 3</title>
+
+   <!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="reset.css" type="text/css"> 
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <link rel="stylesheet" href="style2.css" type="text/css">   
+   <!-- Bootstrap core JavaScript
+   ================================================== -->
+
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" defer></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" defer></script>
+
+</head>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul>
+      <li id="name"><a  href="#">Delane Brandy</a></li>
+      <li class="selection"><a href="#">Experience</a></li>
+      <li class="selection"><a href="#">Education</a></li>
+      <li class="selection"><a href="#">Skills</a></li>
+  </ul>    
+</nav>
+<body>
+  <div class="container-fluid">
+    <div class="row"> <!--Main Row-->
+      <div class="col-sm-2"> <!--Left Column-->
+        <div class="divleftbar">
+          <h2 id="researchhd">Research Interests</h2>
+          <p>Algorithmic Bias</p>
+          <p>UI/UX Design</p>
+          <p>AI</p>
+          <p>Robotics</p>
+      </div>
+      <div class="divleftbar">
+        <ul class="nav nav-pills flex-column">
+            <li><a href="#">CV</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Hobbies</a></li>
+            <li><a href="#">Links</a></li>
+        </ul>
+    </div>
+    <div class="divleftbar">
+      <div class="h2div">
+          <h2>Top 3 Skills</h2>
+      </div>
+      <div id="skills">        
+        <!--First Rank Image--> 
+        <div class="media">
+            <div class="media-left media-middle">
+                <img src="images/first.png" class="media-object">
+            </div>
+            <div class="media-body">
+                <p class="skillRank">HTML - Hypertext Markup Language</p>
+            </div>
+        </div>                        
+         <!--Second Rank Image-->          
+         <div class="media">
+             <div class="media-left media-middle">
+                <img src="images/second.png" class="media-object">   
+             </div>
+             <div class="media-body">
+                <p class="skillRank">CSS - Cascading Style Sheet</p>
+             </div>
+         </div>           
+        <!--Third Rank Image--> 
+        <div class="media">
+            <div class="media-left media-middle">
+                <img src="images/third.png" class="media-object">
+            </div>
+            <div class="media-body">
+                <p class="skillRank">SQL - Structured Query Language</p>
+            </div>
+        </div>             
+        </div>
+        </div>
+        </div>   
+      <div class="col-sm-7"> <!--Middle Column-->
+        <div class="row"> <!--Nested Row-->
+          <div class="col-sm-8" > 
+            <h2>About Myself</h2>
+            <p>Hi, my name is Delane Brandy and I am a student at Queen Mary University of London studying Computer Science.</p><br>          
+        </div>
+        <div class="col-sm-4">
+          <img id="aboutimage" src="images/me.png">
+        </div>
+        </div>     
+        <div id="table-responsive">
+        <h2 id="education">Education</h2>
+          <table class="table">
+            <tr>
+              <th>2013-2021</th>
+              <td>GCSE and A-Level Bishop Douglass School</td>
+            </tr>
+            <tr>
+              <th>2019-Present</th>
+              <td>Bachelor's in Computer Science, Queen Mary University of London</td>
+            </tr>        
+          </table>
+        </div>
+      </div>
+      <div class="col-sm-3"> <!--Right Column-->
+        <div class="rightbar">
+          <aside>
+          <h2 class="h2div">Hobbies</h2>
+          <ul class="listright">
+              <li>Programming</li>
+              <li>Guitar</li>
+              <li>Video Games</li>
+          </ul>        
+          </aside>        
+      </div>
+      <div class="rightbar">
+          <aside>
+              <h2 class="h2div">Top 5 Movies</h2>
+              <ul class="listright">
+                  <li>Avatar</li>
+                  <li>Avengers: Infinity War</li>
+                  <li>Star Wars New Hope</li>
+                  <li>Dark Knight Rises</li>
+                  <li>Parasite</li>
+              </ul>
+          </aside>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

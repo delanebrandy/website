@@ -1,0 +1,127 @@
+nav {
+    background-color: lightgreen;
+    height: 10%;
+}
+nav li {
+    float: left;
+    display: block;
+    font-family: sans-serif;     
+    padding-top: 20pt;
+    padding-left: 10pt;   
+}
+nav li a {
+    text-decoration: none;
+    color: gray;
+}
+nav li a:active {
+    color: white;
+}
+nav li a:hover {
+    color: white;
+    text-decoration: none;
+}
+#name a {
+    font-size: 20pt;      
+    line-height: 40%;
+    color: white;
+}
+.selection {
+    padding-left: 15pt;
+    
+}
+#divleftcolumn {
+    float: left;        
+    margin-top: 10pt;
+    background-color: white;    
+}
+#divmaincolumn {    
+    margin-top: 10pt;
+    padding: 15pt;
+    margin-left: 25em;
+    margin-right: 25em;
+    position: absolute;
+    font-family: sans-serif;
+}
+.divleftbar {  
+    background-color: lightgray;
+    padding: 15pt;        
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    font-family: sans-serif;    
+}
+.divleftbar li {
+    display: block;    
+}
+
+.media-object {
+    float: left;
+    clear: left;      
+    height: 50px;
+}
+.skillRank {
+    float: left;      
+    padding-top: 10pt;
+}
+#skills {
+    height: 25em;    
+    padding: 10pt;
+    background-color: white;
+}
+#researchhd {
+    color: grey;
+    background-color: lightgray;;
+}
+h2 {
+    font-family: sans-serif;      
+}
+.h2div {
+    background-color: yellow;    
+    padding: 10pt;
+}
+ul li a {
+    text-decoration: none;
+}
+ul li {
+    display: block;
+}
+
+#aboutimage {    
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+#education {   
+    border-top: 1pt solid lightgreen;
+    clear: right;
+}
+.divrightcolumn {
+    margin-top: 5pt;
+    margin-left: 55em;
+    width: 20em;
+    height: 100em;
+    float: right;     
+    position: absolute;
+    padding: 15pt; 
+    margin-bottom: 10pt;
+    background-color: white;
+    font-family: sans-serif; 
+}
+.rightbar {        
+    background-color: lightgray;
+    padding: 15pt;     
+    margin-top: 10pt;   
+    margin-bottom: 10pt;
+    font-family: sans-serif; 
+}
+aside {
+    background-color: white;
+}
+.listright {
+    padding: 10pt;
+}
+img {
+    max-width:100%;
+}
+.row {
+    padding-top: 10pt;
+}
