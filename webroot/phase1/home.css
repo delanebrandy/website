@@ -5,6 +5,7 @@
 
 html{
     font-family: Roboto, sans-serif;   
+    flex: 100;
 }
 
 header{
@@ -18,6 +19,7 @@ header{
 
     display: flex;
     justify-content: space-between;
+    flex: 100;  
 
     padding-top: 1rem;
     padding-left: 4rem;
@@ -50,41 +52,27 @@ header ul{
     display: flex;
 }
 
-/*
-a.button3{
-    display:flex;
-    padding:0.3em 1.2em;
-    margin:0 0.3em 0.3em 0;
-    border-radius:2em;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font-weight:300;
-    color:#FFFFFF;
-    background-color:#4eb5f1;
-    text-align:center;
-    transition: all 0.2s;
-}
-a.button3:hover{
-    background-color:#4095c6;
-}
-@media all and (max-width:30em){
-    a.button3{
-    display:block;
-    margin:0.2em auto;
+@media only screen and (max-width: 880px) {
+    
+    .mainBody{
+        flex-direction: column;
     }
+    .nameIntro{
+        margin-left: 0rem;
+        flex: 100;
+    }
+    #mainimage{
+        flex: 100;
+    }
+
 }
-*/
 
 
 .nameIntro{
-    margin: 5rem;
     font-size: 2rem;
     font-family: futura-pt, sans-serif;
     font-weight: 600;
     font-size: 2rem;
-    float: left;
-    width: 50%;
 }
 
 .monoFont{
@@ -109,6 +97,23 @@ a.button3:hover{
     color: #d916f2
 }
 
+.mainBody{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+}
+
 .main2{
     display: inline-block;
+}
+
+#mainimage{
+    margin: 2rem;
+    height: 60%;
+    width: 50%;
+}
+
+.half{
+    flex: 50;
+    justify-content: center;
 }
