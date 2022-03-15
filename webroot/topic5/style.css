@@ -29,33 +29,40 @@ nav li a {
   padding-left: 15pt;
   
 }
-#divleftcolumn {
-  float: left;
-  margin-top: 10pt;
-  background-color: white;    
-}
-#divmaincolumn {    
+#main {    
   margin-top: 10pt;
   padding: 15pt;
   margin-left: 20em;
   margin-right: 20em;
   position: absolute;
-
 }
-.divleftbar {  
+
+#mainimage {    
+  float: right;
+  width: 200px;
+  height: 200px;
+}
+
+#leftcolumn {
+  float: left;
+  margin-top: 10pt;
+  background-color: white;    
+}
+
+.leftbar {  
   background-color: lightgray;
   padding: 15pt;    
   margin-top: 10pt;
   margin-bottom: 10pt;
   width: 15em;      
 }
-.divleftbar li {
+.leftbar li {
   display: block;    
 }
 .imgRank {    
   display: inline-block;  
 }
-.skillRank {
+.skillList {
   float: left;        
   padding-top: 10pt;
 }
@@ -68,28 +75,11 @@ nav li a {
   color: grey;
   background-color: lightgray;;
 }
-
-.h2div {
-  background-color: lightgreen;    
-  padding: 10pt;
-}
-ul li a {
-  text-decoration: none;
-}
-ul li {
-  display: block;
-}
-
-#mainimage {    
-  float: right;
-  width: 200px;
-  height: 200px;
-}
 #education {   
   border-top: 1pt solid lightgreen;
   clear: right;
 }
-.divrightcolumn {
+.rightcolumn {
   margin-top: 5pt;
   margin-left: 55em;
   width: 20em;
@@ -110,4 +100,15 @@ aside {
 }
 .listright {
   padding: 10pt;
+}
+
+.h2div {
+  background-color: lightgreen;    
+  padding: 10pt;
+}
+ul li a {
+  text-decoration: none;
+}
+ul li {
+  display: block;
 }

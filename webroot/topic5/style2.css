@@ -29,12 +29,12 @@ nav li a:hover {
     padding-left: 15pt;
     
 }
-#divleftcolumn {
+#leftcolumn {
     float: left;        
     margin-top: 10pt;
     background-color: white;    
 }
-#divmaincolumn {    
+#maincolumn {    
     margin-top: 10pt;
     padding: 15pt;
     margin-left: 25em;
@@ -42,14 +42,14 @@ nav li a:hover {
     position: absolute;
     font-family: sans-serif;
 }
-.divleftbar {  
+.leftbar {  
     background-color: lightgray;
     padding: 15pt;        
     margin-top: 10pt;
     margin-bottom: 10pt;
     font-family: sans-serif;    
 }
-.divleftbar li {
+.leftbar li {
     display: block;    
 }
 
@@ -94,7 +94,7 @@ ul li {
     border-top: 1pt solid lightgreen;
     clear: right;
 }
-.divrightcolumn {
+.rightcolumn {
     margin-top: 5pt;
     margin-left: 55em;
     width: 20em;
