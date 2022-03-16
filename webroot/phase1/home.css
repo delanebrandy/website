@@ -8,6 +8,8 @@ html{
     flex: 100;
 }
 
+/*Desktop header*/
+
 header{
 
     background: rgb(5,245,255);
@@ -52,23 +54,9 @@ header ul{
     display: flex;
 }
 
-@media only screen and (max-width: 880px) {
-    
-    .mainBody{
-        flex-direction: column;
-    }
-    .nameIntro{
-        margin-left: 0rem;
-        flex: 100;
-    }
-    #mainimage{
-        flex: 100;
-    }
-
-}
-
 
 .nameIntro{
+    margin-left: 5rem;
     font-size: 2rem;
     font-family: futura-pt, sans-serif;
     font-weight: 600;
@@ -86,6 +74,7 @@ header ul{
 .p2{
     position: relative;
     left:3rem;
+    white-space: wrap
 }
 
 .fancyFont{
@@ -93,14 +82,16 @@ header ul{
     font-weight: 500;
     font-style: italic;
 }
+
 .pink{
     color: #d916f2
 }
 
 .mainBody{
     margin-top: 3rem;
-    display: flex;
+    flex-flow: row wrap;
     align-items: center;
+    display: flex;
 }
 
 .main2{
@@ -108,12 +99,47 @@ header ul{
 }
 
 #mainimage{
-    margin: 2rem;
-    height: 60%;
+    margin-left: 5rem;
+    height: 50%;
     width: 50%;
 }
 
 .half{
-    flex: 50;
-    justify-content: center;
+    flex: 1;
+    width: 50%
+}
+
+
+/*Mobile*/
+
+@media only screen and (max-width: 880px) {
+    
+    .mainBody{
+        flex-direction: column;
+    }
+
+    #navelements{
+        display: none;
+    }
+    
+
+    .nameIntro{
+        margin-left: 0;
+        font-size: 1.6rem;
+        width: 66%;
+    }
+
+    .monoFont{
+        font-size: 3.5rem;
+    }
+
+    .webBreak{
+        display: none;
+    }
+
+    #mainimage{
+        width: 100%;
+        margin-top: 20%;
+        margin-left: 0;
+    }
 }
