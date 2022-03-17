@@ -110,7 +110,13 @@ header ul{
 }
 
 
+
+
 /*Mobile*/
+
+#logoSmall{
+    display: none;
+}
 
 @media only screen and (max-width: 880px) {
     
@@ -141,5 +147,13 @@ header ul{
         width: 100%;
         margin-top: 20%;
         margin-left: 0;
+    }
+
+    #logoLong{
+        display: none;
+    }
+
+    #logoSmall{
+        display: inline-flex;
     }
 }
