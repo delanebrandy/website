@@ -133,6 +133,24 @@ h2{
     width: 100%;
 }
 
+li{
+    list-style: none;
+    margin-left: 5rem;
+}
+
+h3{
+    margin-left: 3.5rem;
+    margin-top: 1rem;
+    font-family: futura-pt, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color:#033459;
+}
+
+li{
+    font-size: 1.1rem;
+}
+
 /*Main Image*/
 #mainimage{
     height: 50%;
@@ -154,8 +172,21 @@ figcaption{
     margin-right: 6rem;
     margin-top: 1rem;
 }
+#aboutme{
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+}
 
-
+.seventry{
+    flex: 1;
+    width: 70%;
+}
+.twenty{
+    flex: 1;
+    width: 30%;
+}
 
 /*Mobile*/
 
