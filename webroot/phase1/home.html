@@ -9,21 +9,29 @@
 </head>
 <body>
     <header>        
-            <a href="#mainBody">
+            <a href="home.html"> 
                 <img src="images/logo-long.png" alt="logo" id="logoLong">
                 <img src="images/logo-small.png" alt="logo" id="logoSmall">
             </a>
-                <nav>     
-                <ul id = "navelements">
-                    <li><a href=#about>
-                        <span>about me</span></a></li>
-                    <li><a href=#hobbies>
-                        <span>experience</span></a></li>
-                    <li><a href=#cv>blog</a></li>
-                    <li><a href=#links>contact</a></li>
+                <nav id="deskNav">      
+                <ul id = "navelements" class = "longList">
+                    <li><a href=#aboutme>about me</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href=#contact>contact</a></li>
+                    <li><a href="login.html">log in</a></li>
                 </ul>
-            </nav>
-            <!--<a href="#" class = "button3">Menu</a>-->
+                </nav>      
+
+                <nav id="mobileNav">      
+                    <ul class = "longList">
+                        <li><a href=#aboutme>me</a></li>
+                        <li><a href="projects.html"></a>stuff</li>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href=#contact>reach</a></li>
+                        <li><a href="login.html">login</a></li>
+                    </ul>
+                    </nav>
     </header>
     
     <main class="mainBody">
@@ -33,14 +41,78 @@
                 <div class = "monoFont pink">delane</div>
                 <div class = "monoFont pink">brandy</div>   
                 <div class = "p2">i am a computer science <br class = "webBreak">student with an interest in:</div>     
-                <div class = "p2 fancyFont">algorithmic bias, ui/ux, <br class = "webBreak">& game development</div>
+                <div class = "p2 fancyFont">algorithmic bias, ui/ux design, <br class = "webBreak">& game development</div>
         </div>
 
-        <figure class = "half">
-            <img id="mainimage" src="images/me.png" alt="photo of delane brandy">
-        </figure>
+        <div class = "half">
+            <figcaption class="imgmargin fancyFont ">This is me btw:</figcaption>
+            <figure class = "imgmargin">
+                <img id="mainimage" src="images/me.png" alt="photo of delane brandy">
+            </figure>
+        </div>
+
+        <div id="aboutme">
+        <article class="bigFlow">
+            <h2>about me</h2>
+            <p class="paragraph">I am a Computer Science student interested in UI/UX design, human-computer interaction, and the interplay between AI and marginalized communities. The bigger picture, whether it be politically, economically, or environmentally, is something that I’m always considering because it’s an area that genuinely excites me. The constant evolution of technology as well as the historical - fundamental - problems that follow along with that evolution always motivates me to continually improve my skills and my understanding of the solutions to many of our current real-world problems – whether it be solving software problems or better serving a userbase. I aspire to help as many people as I can and allow technological evolution to equally benefit everyone – closing the gaps that technology has opened even wider. </p>
+        </article>
+
+        <article class="bigFlow">
+            <h2>experience</h2>
+            <h3>Bishop Douglass - Head Boy</h3>
+            <p class="paragraph">Worked in a team to communicate with senior members of staff to children as young as 11. Planned events and relayed the challenges faced by students - emotional and educational - during the covid-19 pandemic.</p>
+            <h3>Volunteer programming & sciences tutor</h3>
+            <p class = "paragraph">I helped students learn python, key computer science ideas, and problem-solving skills at a GCSE level. As well as in computer science, I aided students in physics and chemistry both at GCSE and A-level - I made revision resources; helped on a one to one level in key practice areas to develop their skills. </p>
+            <h3>GCSE & A-level revision resource creation</h3>
+            <p class="paragraph">Making, marketing, and selling revision resources for students and teachers online for Chemistry & Physics GCSE/A-level and GCSE Computer Science. </p>
+        </article>
+
+        <article class="half">
+            <h2>education</h2>
+            <h3>Queen Mary University of London - Bsc, Computer Science FT with Industrial Experience</h3>
+            <p class="paragraph">
+                <ul>
+                    <li>Object & Procedural Programming</li>
+                    <li>Computer Systems and Network</li>
+                    <li>Fundamentals of Web Technology</li>
+                    <li>Logic, Discrete Structures, Automata, and Formal Languages</li>
+                </ul>
+                
+            </p>
+        </article>
+
+        <article class="half">
+            <h2>skills</h2>
+            <p class="paragraph">
+                <ul>
+                    <li>python</li>
+                    <li>java</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Project Management</li>
+                    <li>Communication</li>
+
+                </ul>
+            </p>
+        </article>
+
+        <article class="bigFlow" id="contact">
+            <h2>contact me</h2>
+            <p class="paragraph"></p>
+        </article>
+    </div>
     </main>
 
+    <footer>
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+    
+        <ul class = "longList">
+            <li><a href="https://github.com/delanebrandy"><img src="images/gh.svg" alt="github logo" class="socialIcons"></a></li>
+            <li><a href="https://twitter.com/delanebrandy"><img src="images/tw.svg" alt="twitter logo" class="socialIcons"></a></li>
+            <li><a href="https://www.linkedin.com/in/delane-brandy-303a30214/"><img src="images/li.svg" alt="linkedin logo" class="socialIcons"></a></li>
+        </ul>
+    </footer>
 
 </body>
 </html>

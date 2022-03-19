@@ -1,16 +1,17 @@
 @import url("../css/reset.css");
+
+/*Fonts*/
 @import url("https://use.typekit.net/ukj8jpt.css");
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Roboto:ital@0;1&display=swap');
 
 
 html{
     font-family: Roboto, sans-serif;   
-    flex: 100;
 }
 
-/*Desktop header*/
+/*Header*/
 
-header{
+header, footer{
 
     background: rgb(5,245,255);
     background: linear-gradient(90deg, rgba(5,245,255,1) 0%, rgba(13,128,217,1) 100%);
@@ -45,18 +46,32 @@ header a{
 }
 
 header a:hover{
-    color: navy;
-    /*color: #F01FD7*/
-    
+    color: #033459;    
 }
-header ul{
+
+.longList{
     list-style: none;
     display: flex;
 }
 
+/*Footer*/
 
+footer{
+    vertical-align: middle;
+}
+
+footer ul{
+    vertical-align: middle;
+}
+
+.socialIcons{
+    width: 2.2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Text Gropuing thing*/
 .nameIntro{
-    margin-left: 5rem;
     font-size: 2rem;
     font-family: futura-pt, sans-serif;
     font-weight: 600;
@@ -72,8 +87,7 @@ header ul{
 }
 
 .p2{
-    position: relative;
-    left:3rem;
+    margin-left: 3rem;
     white-space: wrap
 }
 
@@ -87,28 +101,59 @@ header ul{
     color: #d916f2
 }
 
-.mainBody{
-    margin-top: 3rem;
+/*Main Body formatting*/
+main{
+    min-height: 100%;
+}
+
+.mainBody{  
+    margin: 5rem;
+    margin-top: 3rem;  
     flex-flow: row wrap;
+    flex-wrap: wrap;
     align-items: center;
     display: flex;
 }
 
-.main2{
-    display: inline-block;
-}
-
-#mainimage{
-    margin-left: 5rem;
-    height: 50%;
-    width: 50%;
+h2{
+    font-family: courier-prime, monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-top: 6%;
+    margin-left: 2rem;
 }
 
 .half{
     flex: 1;
-    width: 50%
+    width: 50%;
 }
 
+.bigFlow{
+    width: 100%;
+}
+
+/*Main Image*/
+#mainimage{
+    height: 50%;
+    width: 50%;
+}
+
+.imgmargin{
+    margin-left: 5rem;
+}
+
+figcaption{
+    font-size: 1.7rem;
+}
+
+/*About me*/
+.paragraph{
+    font-size: 1.25rem;
+    margin-left: 5rem;
+    margin-right: 6rem;
+    margin-top: 1rem;
+}
 
 
 
@@ -118,10 +163,15 @@ header ul{
     display: none;
 }
 
-@media only screen and (max-width: 880px) {
+#mobileNav{
+       display: none;
+}
+
+@media only screen and (max-width: 955px) {
     
     .mainBody{
         flex-direction: column;
+        margin: 2rem;
     }
 
     #navelements{
@@ -144,6 +194,9 @@ header ul{
 
     #mainimage{
         width: 100%;
+    }
+
+    .imgmargin{
         margin-top: 20%;
         margin-left: 0;
     }
@@ -155,4 +208,14 @@ header ul{
     #logoSmall{
         display: inline-flex;
     }
+
+    #mobileNav{
+        display: inline-flex;
+    }
+    .socialIcons{
+        width: 2rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
 }
