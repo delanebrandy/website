@@ -262,12 +262,44 @@ figcaption{
     }
 
     #mobileNav{
-        display: none;
+        display: inline-flex;
     }
     .socialIcons{
         width: 2rem;
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    #aboutme{
+        flex-direction: column;
+        margin: 2rem;
+    }
+    .paragraph{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    h2{
+        margin: 0;
+    }
+    h3{
+        margin-left: 0;
+
+    }
+    .seventry, .twenty{
+
+        width: 100%;
+    }
+    .list{
+        list-style: none;
+        margin-left: 1rem;
+        font-size: 1.4rem;
+    }
+    .list li{
+        margin: 0.5rem;
+    }
+
+    
+
     
 }
