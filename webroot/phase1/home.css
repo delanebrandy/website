@@ -5,29 +5,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Roboto:ital@0;1&display=swap');
 
 
-html{
-    font-family: Roboto, sans-serif;   
+html, body{
+    font-family: Roboto, sans-serif; 
+    height: 100%;  
 }
 
 /*Header*/
 
 header, footer{
-
     background: rgb(5,245,255);
     background: linear-gradient(90deg, rgba(5,245,255,1) 0%, rgba(13,128,217,1) 100%);
-
     font-family: futura-pt, sans-serif;
     font-weight: 500;
     font-size: 30px;
-
     display: flex;
     justify-content: space-between;
     flex: 100;  
-
     padding-top: 1rem;
     padding-left: 4rem;
     padding-right: 5rem;
-
 }
 
 header img{
@@ -44,20 +40,18 @@ header a{
     text-decoration: none;
     color: white;
 }
-
 header a:hover{
     color: #033459;    
 }
-
 .longList{
     list-style: none;
     display: flex;
 }
 
 /*Footer*/
-
 footer{
     vertical-align: middle;
+    flex-shrink: 0;
 }
 
 footer ul{
@@ -192,6 +186,7 @@ figcaption{
     flex: 1;
     width: 70%;
 }
+
 .twenty{
     flex: 1;
     width: 30%;
@@ -219,6 +214,7 @@ legend{
     font-weight: 600;
     color:#033459;
 }
+
 .mainForm{    
     flex-flow: row wrap;
     flex-wrap: wrap;
@@ -228,8 +224,8 @@ legend{
     margin: 5% auto;
     border-radius: 1.5rem;
     width: 30rem;
-    
 }
+
 .mainField{
     margin: 10px;
     padding: 10px;
