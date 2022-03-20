@@ -70,7 +70,7 @@ footer ul{
     padding-right: 10px;
 }
 
-/*Text Gropuing thing*/
+/*Text Grouping thing*/
 .nameIntro{
     font-size: 2rem;
     font-family: futura-pt, sans-serif;
@@ -130,7 +130,7 @@ h2{
     font-size: 2.5rem;
     margin-top: 6%;
     margin-left: 2rem;
-    color:#d916f2
+    color:#d916f2;
 }
 
 .half{
@@ -209,8 +209,77 @@ figcaption{
     margin:1%;
 }
 
-/*Mobile*/
 
+/*login*/
+
+legend{
+    text-decoration: none;
+    font-family: futura-pt, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color:#033459;
+}
+.mainForm{    
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    background: hsl(202, 8%, 80%);
+    margin: 5% auto;
+    border-radius: 1.5rem;
+    width: 30rem;
+    
+}
+.mainField{
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    text-align:center;
+    align-items: center;
+}
+
+.inBox{
+    width: 50%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-width: 0;
+}
+
+.submitButton{
+    background: #033459;
+    color: white;
+    border-width: 0;
+    padding: 1em;
+    border-radius: 1rem;
+    width: 30%;
+    margin: 1rem;
+}
+
+/*Add Blog*/
+textarea{
+    resize: none;
+    border: 0;
+    border-radius: 1rem;  
+    padding: 1rem;
+    font-size: 1.1rem; 
+    margin-bottom: 1.5rem; 
+}
+
+.blogField{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.blogBox{
+    background: hsl(202, 8%, 80%);
+    text-align: center;
+    border-radius: 1.5rem;
+    width: 60rem;
+    margin: 1% auto;
+}
+
+/*Mobile*/
 #logoSmall{
     display: none;
 }
@@ -298,8 +367,4 @@ figcaption{
     .list li{
         margin: 0.5rem;
     }
-
-    
-
-    
 }
