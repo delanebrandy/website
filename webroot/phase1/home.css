@@ -115,6 +115,14 @@ main{
     display: flex;
 }
 
+.gapBot{
+    margin-bottom: 5%;
+}
+
+.gapTop{
+    margin-top: 5%;
+}
+
 h2{
     font-family: courier-prime, monospace;
     font-weight: 700;
@@ -122,6 +130,7 @@ h2{
     font-size: 2.5rem;
     margin-top: 6%;
     margin-left: 2rem;
+    color:#d916f2
 }
 
 .half{
@@ -133,11 +142,6 @@ h2{
     width: 100%;
 }
 
-li{
-    list-style: none;
-    margin-left: 5rem;
-}
-
 h3{
     margin-left: 3.5rem;
     margin-top: 1rem;
@@ -147,8 +151,14 @@ h3{
     color:#033459;
 }
 
+.list{
+    list-style: none;
+    margin-left: 5rem;
+    font-size: 1.4rem;
+}
+
 li{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 /*Main Image*/
@@ -175,7 +185,6 @@ figcaption{
 #aboutme{
     flex-flow: row wrap;
     flex-wrap: wrap;
-    align-items: center;
     display: flex;
 }
 
@@ -186,6 +195,18 @@ figcaption{
 .twenty{
     flex: 1;
     width: 30%;
+}
+
+.links{
+    text-decoration: none;
+    font-family: futura-pt, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#033459;
+}
+
+.linkMargin{
+    margin:1%;
 }
 
 /*Mobile*/
@@ -241,7 +262,7 @@ figcaption{
     }
 
     #mobileNav{
-        display: inline-flex;
+        display: none;
     }
     .socialIcons{
         width: 2rem;
