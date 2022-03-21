@@ -21,9 +21,7 @@ header, footer{
     display: flex;
     justify-content: space-between;
     flex: 100;  
-    padding-top: 1rem;
-    padding-left: 4rem;
-    padding-right: 5rem;
+    padding: 1rem 5rem 0 4rem;
 }
 
 header img{
@@ -60,8 +58,7 @@ footer ul{
 
 .socialIcons{
     width: 2.2rem;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 1rem 1rem 1rem;
 }
 
 /*Text Grouping thing*/
@@ -101,10 +98,8 @@ main{
 }
 
 .mainBody{  
-    margin: 5rem;
-    margin-top: 3rem;  
+    margin: 3rem 5rem 5rem 5rem;
     flex-flow: row wrap;
-    flex-wrap: wrap;
     align-items: center;
     display: flex;
 }
@@ -120,7 +115,6 @@ main{
 h2{
     font-family: courier-prime, monospace;
     font-weight: 700;
-    font-style: normal;
     font-size: 2.5rem;
     margin-top: 6%;
     margin-left: 2rem;
@@ -182,12 +176,12 @@ figcaption{
     display: flex;
 }
 
-.seventry{
+.sev{
     flex: 1;
     width: 70%;
 }
 
-.twenty{
+.third{
     flex: 1;
     width: 30%;
 }
