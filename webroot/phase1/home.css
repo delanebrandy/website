@@ -323,6 +323,7 @@ textarea{
     #mobileNav{
         display: inline-flex;
     }
+    
     .socialIcons{
         width: 2rem;
         padding-left: 10px;
@@ -333,6 +334,7 @@ textarea{
         flex-direction: column;
         margin: 2rem;
     }
+
     .paragraph{
         margin-left: 0;
         margin-right: 0;
@@ -341,12 +343,12 @@ textarea{
     h2{
         margin: 0;
     }
+
     h3{
         margin-left: 0;
 
     }
-    .seventry, .twenty{
-
+    .sev, .third{
         width: 100%;
     }
     .list{
