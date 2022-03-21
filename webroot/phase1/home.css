@@ -1,4 +1,4 @@
-@import url("../css/reset.css");
+@import url("reset.css");
 
 /*Fonts*/
 @import url("https://use.typekit.net/ukj8jpt.css");
@@ -145,8 +145,17 @@ h3{
     font-size: 1.4rem;
 }
 
-li{
-    font-size: 1.2rem;
+main li, a{
+    font-size: 1.15rem;
+}
+main a{
+    color: #d916f2;   
+    text-decoration: none;
+    font-weight: 550;
+    margin-left: 3.5rem;
+}
+main a:visited{
+    color: #5D0AFC;
 }
 
 /*Main Image*/
@@ -277,6 +286,9 @@ textarea{
 #mobileNav{
        display: none;
 }
+
+/*Projects*/
+
 
 @media only screen and (max-width: 955px) {
     
