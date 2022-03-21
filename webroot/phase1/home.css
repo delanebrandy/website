@@ -359,4 +359,8 @@ textarea{
     .list li{
         margin: 0.5rem;
     }
+
+    .mainForm{
+        width: 90%;
+    }
 }
