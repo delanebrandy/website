@@ -30,10 +30,12 @@
 
 <main>
     <form method= "POST" action="addPost.php" class="blogBox">
-        <fieldset class="blogFi">
+        <fieldset class="blogField">
             <legend>Add Blog Entry</legend>
+            <input class= "title blogField" type="text" name="title" placeholder="Title" required >
             <label for="blogText"></label>
-            <textarea name="" id="" cols="80%" rows="20%"></textarea>
+            <textarea class = "blogMain" name="" id="" rows="20%" required placeholder="Blog Entry"></textarea>
+            <br>
             <input type="submit" class="submitButton">
         </fieldset>
     </form>
