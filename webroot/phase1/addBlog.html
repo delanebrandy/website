@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="home.css">
+    <script defer src="js/blog.js"></script>
 </head>
+
 <body>
     <header>        
-        <a href="home.html"> 
+        <a href="index.html"> 
             <img src="images/logo-long.png" alt="logo" id="logoLong">
             <img src="images/logo-small.png" alt="logo" id="logoSmall">
         </a>
             <nav id="deskNav">      
             <ul id = "navelements" class = "longList">
                 <li><a href="projects.html">projects</a></li>
-                <li><a href=home.html#contact>contact</a></li>
+                <li><a href=index.html#contact>contact</a></li>
                 <li><a href="login.html">log in</a></li>
             </ul>
             </nav>      
@@ -26,17 +28,24 @@
                     <li><a href="login.html">login</a></li>
                 </ul>
                 </nav>
-</header>
+    </header>
 
 <main>
-    <form method= "POST" action="addPost.php" class="blogBox">
+    <form id="form" method= "POST" action="addPost.php"class="blogBox">
         <fieldset class="blogField">
+            
             <legend>Add Blog Entry</legend>
-            <input class= "title blogField" type="text" name="title" placeholder="Title" required >
-            <label for="blogText"></label>
-            <textarea class = "blogMain" name="" id="" rows="20%" required placeholder="Blog Entry"></textarea>
+
+            <label for="blogTitle"></label>
+            <input id="title" class= "title blogField" type="text" name="title" placeholder="Title">
+
+            <label for="content"></label>
+            <textarea id ="content" class = "blogMain" name="content" rows="20%" placeholder="Blog Entry"></textarea>
+
             <br>
-            <input type="submit" class="submitButton">
+
+            <button type="submit" class="submitButton" id="submit">Submit</button>
+            <button type="clear"id ="clear" class="submitButton">Clear</button>
         </fieldset>
     </form>
 </main>
@@ -52,4 +61,5 @@
 </footer>
 
 </body>
+
 </html>
