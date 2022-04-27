@@ -67,14 +67,14 @@
 </header>
 
 <main>
-<div class="row">
+<div class="blog">
     <?php 
         if (!$_SESSION['noContent']){
             for ($i = 0; $i < count($data); $i++){
-                echo "<div class='col-4'>";
+                echo "<div class='blogPosts'>";
                 echo "<h2>".$data[$i][1]."</h2>";
-                echo "<p>".$data[$i][0]."</p>";
-                echo "<p>".$data[$i][2]."</p>";
+                echo "<h3 class='blogText'>".$data[$i][0]."</h3>";
+                echo "<p class = 'blogText'>".$data[$i][2]."</p>";
                 echo "</div>";
             }
         }

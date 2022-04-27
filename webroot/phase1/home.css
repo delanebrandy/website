@@ -297,6 +297,33 @@ textarea{
     margin: 1% auto;
 }
 
+/*Blog*/
+
+.blog{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.blogPosts{
+    width: 37%;
+    border-radius: 1rem;
+    border-width: 0;
+    padding: 0.7rem;
+    margin: 2rem;
+    background: hsl(202, 8%, 92%);
+}
+.blogText{
+    margin: 0 2rem 1rem 2rem;
+}
+.blog h2 {
+    margin-right: 2rem;
+    font-size: 2rem;
+}
+.blog h3 {
+    font-size: 1.1rem;
+}
+
 /*Mobile*/
 #logoSmall{
     display: none;

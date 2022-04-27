@@ -9,6 +9,7 @@
         $sql = "INSERT INTO blog (date, title, body) VALUES (NOW(), '$title', '$body')";
         if ($conn->query($sql) === TRUE) {
             alert("New record created successfully");
+            header("Location: blog.php");
           } else {
             alert("Error: " . $sql . "<br>" . $conn->error);
           }

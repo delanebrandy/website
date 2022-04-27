@@ -18,23 +18,22 @@
                 alert("Please fill in all the fields");
             }
             else{
-                $query = "SELECT * FROM login WHERE email = '$email'";
+                $query = "SELECT * FROM login WHERE email = '$email' AND password = '$password'";
                 $result = mysqli_query($conn, $query);
-
-                if (mysqli_num_rows($result) > 0){
-                    $row = mysqli_fetch_assoc($result);
-                    if($row['password'] == $password){
+                
+                if (!$result){
+                    alert("Error: " . mysqli_error($conn));
+                }
+                else{
+                    if (mysqli_num_rows($result) == 1){
                         $_SESSION['loggedin'] = true;
                         $_SESSION['email'] = $email;
                         header("Location: addBlog.php");
                         exit;
                     }
                     else{
-                        alert("Incorrect password");
+                        alert("Incorrect email or password");
                     }
-                }
-                else{
-                    alert("Email not found");
                 }
             }
         }
