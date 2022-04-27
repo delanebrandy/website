@@ -1,3 +1,41 @@
+<?php
+    session_start();
+
+    include "serverConnection.php";
+
+    $sql = "SELECT * FROM blog";
+
+    $result = mysqli_query($conn, $sql);
+
+    $data = array();
+    $dateTime;
+    $content = array();
+
+    if (mysqli_num_rows($result) > 0) {
+        for ($i =0; $i < mysqli_num_rows($result); $i++){
+            $row = mysqli_fetch_assoc($result);
+            $data[$i] = array($row["date"], $row["title"], $row["body"]);
+            $_SESSION['noContent'] = false;
+        }
+    } else {
+        $_SESSION['noContent'] = true;
+    }
+    
+    //bubble sort algorithm for sorting $data by date (array[0])
+    for ($i = 0; $i < count($data); $i++){
+        for ($j = 0; $j < count($data) - 1; $j++){
+            if ($data[$j][0] < $data[$j + 1][0]){
+                $temp = $data[$j];
+                $data[$j] = $data[$j + 1];
+                $data[$j + 1] = $temp;
+            }
+        }
+    }
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +44,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="home.css">
-    <script defer src="js/blog.js"></script>
 </head>
-
 <body>
     <header>        
         <a href="index.html"> 
@@ -19,35 +55,37 @@
             <ul id = "navelements" class = "longList">
                 <li><a href="projects.html">projects</a></li>
                 <li><a href=index.html#contact>contact</a></li>
-                <li><a href="login.html">log in</a></li>
+                <li><a href="login.php">log in</a></li>
             </ul>
             </nav>      
 
             <nav id="mobileNav">      
                 <ul class = "longList">
-                    <li><a href="login.html">login</a></li>
+                    <li><a href="login.php">login</a></li>
                 </ul>
                 </nav>
-    </header>
+</header>
 
 <main>
-    <form id="form" method= "POST" action="addPost.php"class="blogBox">
-        <fieldset class="blogField">
-            
-            <legend>Add Blog Entry</legend>
+<div class="row">
+    <?php 
+        if (!$_SESSION['noContent']){
+            for ($i = 0; $i < count($data); $i++){
+                echo "<div class='col-4'>";
+                echo "<h2>".$data[$i][1]."</h2>";
+                echo "<p>".$data[$i][0]."</p>";
+                echo "<p>".$data[$i][2]."</p>";
+                echo "</div>";
+            }
+        }
+        else{
+            echo "<h2>No content</h2>";
+        }
 
-            <label for="blogTitle"></label>
-            <input id="title" class= "title blogField" type="text" name="title" placeholder="Title">
+    
+    ?>
 
-            <label for="content"></label>
-            <textarea id ="content" class = "blogMain" name="content" rows="20%" placeholder="Blog Entry"></textarea>
-
-            <br>
-
-            <button type="submit" class="submitButton" id="submit">Submit</button>
-            <button type="clear"id ="clear" class="submitButton">Clear</button>
-        </fieldset>
-    </form>
+</div>
 </main>
 
 <footer>
@@ -61,5 +99,4 @@
 </footer>
 
 </body>
-
 </html>
