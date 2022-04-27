@@ -55,13 +55,25 @@
             <ul id = "navelements" class = "longList">
                 <li><a href="projects.html">projects</a></li>
                 <li><a href=index.html#contact>contact</a></li>
-                <li><a href="login.php">log in</a></li>
+                <?php
+                    if ((isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true)){
+                        echo "<li><a href='addblog.php'>blog post</a></li>";
+                    } else {
+                        echo "<li><a href='login.php'>log in</a></li>";
+                    }
+                ?>
             </ul>
             </nav>      
 
             <nav id="mobileNav">      
                 <ul class = "longList">
-                    <li><a href="login.php">login</a></li>
+                <?php
+                    if (isset($_SESSION['loggedIn'])){
+                        echo "<li><a href='addblog.php'>Blog Post</a></li>";
+                    } else {
+                        echo "<li><a href='login.php'>login</a></li>";
+                    }
+                ?>
                 </ul>
                 </nav>
 </header>
