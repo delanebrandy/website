@@ -27,3 +27,9 @@ clear.addEventListener('click', e => {
     window.confirm('Are you sure you want to clear?');
     document.getElementById('form').reset();
 });
+
+function changeLogin(){
+    const log = document.getElementById('login');
+    log = log.outerHTML = '<a href="logout.php" id="logout">Logout</a>';
+  }
+  
