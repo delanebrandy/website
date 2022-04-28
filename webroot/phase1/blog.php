@@ -1,6 +1,5 @@
 <?php
     session_start();
-
     include "serverConnection.php";
 
     $sql = "SELECT * FROM blog";
@@ -83,9 +82,10 @@
     <?php 
         if (!$_SESSION['noContent']){
             for ($i = 0; $i < count($data); $i++){
+                $formattedDate = date("j F Y, G:i T", strtotime($data[$i][0]));
                 echo "<div class='blogPosts'>";
                 echo "<h2>".$data[$i][1]."</h2>";
-                echo "<h3 class='blogText'>".$data[$i][0]."</h3>";
+                echo "<h3 class='blogText'>".$formattedDate."</h3>";
                 echo "<p class = 'blogText'>".$data[$i][2]."</p>";
                 echo "</div>";
             }
