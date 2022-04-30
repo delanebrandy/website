@@ -11,10 +11,27 @@
 
 <?php
 session_start();
+include "serverConnection.php";
  
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login.php ");
+    header("location: login.php "); 
     exit;
+}
+if (isset($_POST["title"]) && isset($_POST["content"])){
+
+    $title = trim($_POST["title"]);
+    $body = trim($_POST["content"]);
+    $date = date("Y-m-d H:i:s");
+
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $sql = "INSERT INTO blog (date, title, body) VALUES ('$date', '$title', '$body')";
+        if ($conn->query($sql) === TRUE) {
+            alert("New record created successfully");
+            header("Location: blog.php");
+        } else {
+            alert("Error: " . $sql . "<br>" . $conn->error);
+        }
+    }
 }
 ?>
 
@@ -40,7 +57,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </header>
 
 <main>
-    <form id="form" method= "POST" action="addPost.php"class="blogBox">
+    <form id="form" method= "POST" class="blogBox">
         <fieldset class="blogField">
             
             <legend>Add Blog Entry</legend>
