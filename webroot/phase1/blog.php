@@ -7,8 +7,6 @@
     $result = mysqli_query($conn, $sql);
 
     $data = array();
-    $dateTime;
-    $content = array();
 
     if (mysqli_num_rows($result) > 0) {
         for ($i =0; $i < mysqli_num_rows($result); $i++){
