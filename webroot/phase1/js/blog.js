@@ -22,11 +22,12 @@ form.addEventListener('submit', (e) => {
 })
 
 clear.addEventListener('click', e => {
+    if (window.confirm('Are you sure you want to clear?')) {   
+        title.style.backgroundColor = '#FFFFFF';
+        content.style.backgroundColor = '#FFFFFF';
+        document.getElementById('form').reset();
+    }
     e.preventDefault();
-    window.confirm('Are you sure you want to clear?');
-    title.style.backgroundColor = '#FFFFFF';
-    content.style.backgroundColor = '#FFFFFF';
-    document.getElementById('form').reset();
 });
 
 function changeLogin(){
