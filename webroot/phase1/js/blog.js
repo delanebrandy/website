@@ -3,7 +3,6 @@ const content = document.getElementById('content');
 const form = document.getElementById('form');
 const clear = document.getElementById('clear');
 
-
 form.addEventListener('submit', (e) => {
     let messages = []
     const errorColour = '#FFA7A7';
@@ -25,6 +24,8 @@ form.addEventListener('submit', (e) => {
 clear.addEventListener('click', e => {
     e.preventDefault();
     window.confirm('Are you sure you want to clear?');
+    title.style.backgroundColor = '#FFFFFF';
+    content.style.backgroundColor = '#FFFFFF';
     document.getElementById('form').reset();
 });
 
