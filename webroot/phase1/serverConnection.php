@@ -5,12 +5,12 @@
         </script>";
     } 
 
-    $dbhost = getenv("MYSQL_SERVICE_HOST");
-    $dbport = getenv("MYSQL_SERVICE_PORT");
-    $dbuser = "root";
-    $dbpwd = "";
+    $dbhost = "213.171.200.100";
+    $dbport = "3306";
+    $dbuser = "delane";
+    $dbpwd = "z2I1n2D*n1H";
     $dbname = "website";
 
     $conn = mysqli_connect($dbhost, $dbuser, $dbpwd, $dbname) or
-    die('Connection to database failed: ' .$mysqli->connect_error);
+    die('Oh no, Connection to database failed: ' .$mysqli->connect_error);
 ?>
