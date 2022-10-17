@@ -5,6 +5,7 @@
 /logs/*
 /tmp/*
 /vendor/*
+/webroot/phase1/serverConnection.php
 
 # OS generated files #
 ######################
